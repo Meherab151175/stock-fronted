@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// const API_URL = "https://stock-backend-07c7.onrender.com";
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.VITE_API_URL_JSON;
+// const API_URL = import.meta.env.VITE_API_URL_SQL;
 
 export const stockApi = {
   getStocks: async (skip = 0, limit = 10, tradeCode?: string) => {
